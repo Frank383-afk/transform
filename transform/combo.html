@@ -1,0 +1,738 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="tran.css">
+    <script type="module" src="https://unpkg.com/ionicons@8.0.13/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@8.0.13/dist/ionicons/ionicons.js"></script>
+<style>
+   @import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Sora:wght@100..800&display=swap');
+*{
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    overflow-x: hidden;
+}
+.container{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10vh;
+    position: relative;
+    background: linear-gradient(rgba(0, 0, 0, 0.467), rgb(0, 0, 0)), url(guide\ \(2\).png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.topnav{
+    height: 10vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    position: absolute;
+    top: 0;
+}
+.topnav nav{
+    height: 10vh;
+    width: 70%;
+    background: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+.topnav nav .a{
+    height: 10vh;
+    width: 80%;
+    background: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+.topnav nav a{
+    height: 10vh;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+    flex-direction: row;
+    transform: scale(0.7);
+    font-weight: 300;
+    color: white;
+}
+.topnav button{
+    height: 40px;
+    width: 100px;
+    background-color: gray;
+    border: none;
+    outline: none;
+    color: white;
+    cursor: pointer;
+}
+.container .card{
+    height: 80vh;
+    width: 60%;
+    background: transparent;
+    position: absolute;
+    left: 0;
+    top: 14vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+    transform: scale(0.8);
+}
+.brads{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 10vh;
+    width: 50%;
+    background: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+.brads ion-icon{
+    cursor: pointer;
+    color: black;
+    font-weight: 700;
+}
+.buttons{
+    height: 10vh;
+    width: 40vw;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    background: transparent;
+    gap: 20px;
+}
+.buttons button{
+    height: 9vh;
+    width: 200px;
+    border: none;
+    outline: none;
+    background-color: white;
+    font-size: 11px;
+    letter-spacing: 2px;
+    transition: 0.5s;
+
+}
+.buttons button:hover{
+    background: transparent;
+    color: white;
+    border: 2px solid white;
+
+}
+.buttons #bt-two{
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+    
+}
+.buttons #bt-two:hover{
+    background-color: white;
+    color: black;
+}
+#pone{
+    color: white;
+    font-size: 15px;
+}
+#normal{
+    font-weight: 600;
+    letter-spacing: 20px;
+    color: white;
+}
+#small{
+    font-size: 11px;
+    color: white;
+}
+.logo h2{
+    color: white;
+}
+p{
+    color: white;
+}
+/* section */
+.section{
+    height: 100vh;
+    width: 100vw;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+::-webkit-scrollbar{
+    display: none;
+}
+.section h2{
+    color: white;
+    letter-spacing: 10px;
+    font-weight: 200
+}
+.section .card-show{
+    height: 50vh;
+    width: 100%;
+    background:transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+.card-show .small-card{
+    height: 50vh;
+    width: 220px;
+    background: transparent;
+    border: 2px solid white;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: 0.5s;
+    
+}
+.card-show .small-card:hover{
+    transform: translateY(-20px);
+    background-color: gray;
+    box-shadow: 0px 0px 30px 0px gray;
+
+}
+.small-card .title h2{
+    font-size: 17px;
+    letter-spacing: 0px;
+    font-weight: 600;
+}
+.small-card .title p{
+    font-size: 11px;
+    font-weight: 500;
+}
+.small-card .title{
+    height: 50vh;
+    width: 220px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+}
+.small-card .title ion-icon{
+    color: white;
+    font-size: 20px;
+}
+.about{
+    background-color: black;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+}
+.about .values-card{
+    height: 100vh;
+    width: 30%;
+    background: transparent;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    border-right: 2px solid gray;
+    
+}
+.about .values-card h2{
+    font-size: 20px;
+    font-weight: 200;
+    text-align: center;
+}
+.about .values-card p{
+    font-size: 11px;
+    text-align: center;
+}
+.about .values-card .h2{
+    height: 100px;
+    width: 200px;
+    background: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.about .rating{
+    height: 100vh;
+    width: 70%;
+    background: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    flex-direction: column;
+}
+.about .rating h2{
+    color: white;
+    font-size: 25px;
+    font-weight: 200;
+    letter-spacing: 10px;
+}
+.about .rating p{
+    font-size: 11px;
+}
+.values-card .rows{
+    height: 20vh;
+    width: 100%;
+    background: transparent;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    flex-direction: row;
+    transition: 0.5s;
+    
+}
+.rows ion-icon{
+    color: white;
+    font-size: 40px;
+    font-weight: 600;
+    text-align: center;
+}
+.rows:hover{
+    background: gray;
+}
+.h2{
+    border-bottom: 2px solid white;
+    height: 10vh;
+    width: 200px;
+    background: transparent;
+}
+.rows h3{
+    font-size: 15px;
+    font-weight: 200;
+}
+.stat-cards{
+    height: 40vh;
+    width: 30%;
+    background: transparent;
+    border-right: 2px solid gray;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: start;
+    gap: 10px;
+    flex-direction: column;
+    transition: 0.5s;
+    
+}
+.stat-cards h2{
+    color: white;
+}
+.stcards{
+    
+     height: 50vh;
+    width: 100%;
+    display: flex;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+   
+}
+.stat-cards:hover{
+    background-color: gray;
+    box-shadow: 0px 0px 30px 0px gray;
+}
+.projects{
+    height: 170vh;
+    width: 100vw;
+    background-color: black;
+
+}
+.projects .projh2{
+    height: 50vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    background: transparent;
+
+
+}
+ 
+
+.projects .projh2 h1{
+    color: white;
+    font-size: 30px;
+    font-weight: 900;
+}
+.projects .projh2 p{
+    font-size: 11px;
+    font-weight: 600;
+}
+.mention{
+    height: 100vh;
+    width: 100vw;
+    background: transparent;
+}
+.nav button{
+    height: 30px;
+    width: 160px;
+    outline: none;
+    border: none;
+    background: transparent;
+    color: white;
+    background: transparent;
+    cursor: pointer;
+    font-weight: 200;
+    transition: 0.5s;
+}
+.nav button:hover{
+    border-bottom: 2px solid white;
+}
+.prj-card{
+    height: 100vh;
+    width: 100vw;
+    background: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    transform: scale(0.8);
+}
+.prj-card .show-card{
+    height: 100%;
+    width: 30%;
+    background: transparent;
+    border: 1px solid gray;
+    transition: 0.5s;
+}
+.prj-card .show-card:hover{
+    transform: translateY(-20px);
+    border-color: white;
+    box-shadow: 0px 0px 40px 0px rgb(56, 56, 56);
+}
+.prj-card .show-card .img{
+    height: 40%;
+    width: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.104), rgb(0, 0, 0)), url(webo.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.prj-card .show-card .content{
+ height: 30%;
+ width: 100%;
+ background: transparent;
+
+}
+.prj-card .show-card .content button{
+    height: 30px;
+    width: 130px;
+    border: none;
+    outline: none;
+    background: transparent;
+    color: white;
+    border-radius: 20px;
+    border: 1px solid white;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.prj-card .show-card .content button:hover{
+    background-color: white;
+    color: black;
+}
+.prj-card .show-card .content h2{
+    font-size: 20px;
+    font-weight: 300;
+    letter-spacing: 10px;
+    color: white;
+}
+.prj-card .show-card .content h3{
+    font-size: 15px;
+    font-weight: 200;
+    letter-spacing: 5px;
+    color: white;
+}
+.prj-card .show-card .content p{
+    font-size: 11px;
+    color: white;
+}
+.major-card{
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(29, 96, 155) ;
+}
+.item{
+    height: 10px;
+    width: 150px;
+    background: transparent;
+    border-radius: 20px;
+    position: relative;
+    border: 1px solid white;
+}
+.item::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 70%;
+    background-color: white;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+label{
+    color: white;
+}
+.sign-off{
+    height: 20%;
+    width: 100%;
+    background: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+.button-sign{
+    display: flex;
+}
+.button-sign button{
+    height: 30px;
+    width: 30px;
+    background-color: black;
+    border: none;
+    outline: none;
+    border: 1px solid white;
+    color: white;
+    cursor: pointer;
+}
+#two{
+    background: linear-gradient(rgba(0, 0, 0, 0.104), rgb(0, 0, 0)), url(lapi.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#three{
+   background: linear-gradient(rgba(0, 0, 0, 0.104), rgb(0, 0, 0)), url(os.png);
+   background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+
+</style>
+</head>
+<body>
+    <div class="container">
+        <div class="topnav">
+            <div class="logo">
+                <h2>TRANSFORM</h2>
+            </div>
+            <nav>
+                <div class="a">
+                    <a href="">Home</a>
+                    <a href="">Services</a>
+                    <a href="">About</a>
+                    <a href="">Work</a>
+                    <a href="">Blog</a>
+                    <a href="">Contact</a>
+                </div>
+            </nav>
+        </div>
+        <div class="card">
+            <p id="pone">WE DON'T FOLLOW CHANGE</p>
+            <h1 id="normal">WE CREATE TRANSFORMATION</h1>
+            <p>-----------</p>
+
+            <p id="small">Transform is a technology company building digital solutions that drive businesss foward</p>
+             <div class="buttons">
+                <button>GET STARTED</button>
+                <button id="bt-two">EXPLORE SERVISES</button>
+             </div>
+        </div>
+        <div class="brads">
+            <ion-icon name="logo-google"></ion-icon>
+            <ion-icon name="logo-microsoft"></ion-icon>
+            <ion-icon name="logo-amazon"></ion-icon>
+
+        </div>
+    </div>
+    <section class="section">
+        <header><h2>OUR SERVICES</h2></header>
+        <div class="card-show">
+            <div class="small-card">
+                <div class="title">
+                    <ion-icon name="logo-web-component"></ion-icon>
+                    <h2>Web-Development</h2>
+                    <p>Interactive, proper designed websites from our qualified</p>
+                </div>
+
+            </div>
+            <div class="small-card">
+                <div class="title">
+                    <ion-icon name="options-outline"></ion-icon>
+                    <h2>UNIX/ INX Design</h2>
+                    <p>Interactive, proper designed websites from our qualified</p>
+                </div>
+            </div>
+            <div class="small-card">
+                <div class="title">
+                    <ion-icon name="git-branch-outline"></ion-icon>
+                    <h2>OPTICAL STRATEGY</h2>
+                    <p>Interactive, proper designed websites from our qualified</p>
+                </div>
+            </div>
+            <div class="small-card">
+                <div class="title">
+                    <ion-icon name="bar-chart-outline"></ion-icon>
+                    <h2>BRANDING</h2>
+                    <p>Interactive, proper designed websites from our qualified</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+     <div class="space"></div>
+    <section class="about">
+        <div class="values-card">
+            <div class="h2"> <h2>OUR VALUES</h2></div>
+            <div class="rows">
+                <ion-icon name="bulb-outline"></ion-icon>
+                <h3>Integrity</h3>
+                
+            </div>
+            <div class="rows">
+               <ion-icon name="people-outline"></ion-icon>
+                <h3>TEAM WORK</h3>
+               
+            </div>
+            <div class="rows">
+                <ion-icon name="shield-checkmark-outline"></ion-icon>
+                <h3>Transparent</h3>
+              
+            </div>
+            <div class="rows">
+              <ion-icon name="stopwatch-outline"></ion-icon>
+                <h3>Timeless</h3>
+               
+            </div>
+        </div>
+        <div class="rating">
+            <h2>STATS</h2>
+            <div class="stcards">
+                  <div class="stat-cards">
+                    <h2>+5M</h2>
+                    <p>Active customers</p>
+            </div>
+            <div class="stat-cards">
+                <h2>+150M</h2>
+                    <p>Attendet to customers</p>
+            </div>
+            <div class="stat-cards">
+                <h2>+15Yrs</h2>
+                    <p>Years of Experience</p>
+            </div>
+
+            </div>
+          
+        </div>
+    </section>
+     <div class="space"></div>
+    <section class="projects">
+        <div class="projh2">
+            <h1>PROJECTS IN PROGRESS</h1>
+            <p>We as Transform are woring on several projects as we continue to build our legasy as the top company we are currenntly oin 2026. Working o creating unimaginable sites and so much more.</p>
+        </div>
+        <div class="mention">
+            <div class="nav">
+                <button>WEB DEV</button>
+                <button>OS MANUFACTURE</button>
+                <button>TAECHING</button>
+                <button>OTHER</button>
+            </div>
+            <div class="prj-card">
+                <div class="show-card">
+                    <div class="img" >
+
+                    </div>
+                    <div class="content">
+                        <button>IN PROGRESS</button>
+                        <h2>TRANSFORM.COM</h2>
+                        <h3>WEB DEVELOPMENT</h3>
+                        <p>We aim to make the best web developer AI in the world that is very user friendly.</p>
+
+                    </div>
+                    <div class="sign-off">
+                      <div class="item"></div><label>75%</label>
+                      <div class="button-sign">
+                        <button>></button>
+                      </div>
+
+                    </div>
+                </div>
+                <div class="show-card">
+                    <div class="img" id="two">
+
+                    </div>
+                    <div class="content">
+                        <button>IN PROGRESS</button>
+                        <h2>TRANSFORM.COM</h2>
+                        <h3>WEB DEVELOPMENT</h3>
+                        <p>We aim to make the best web developer AI in the world that is very user friendly.</p>
+
+                    </div>
+                    <div class="sign-off">
+                      <div class="item"></div><label>75%</label>
+                      <div class="button-sign">
+                        <button>></button>
+                      </div>
+
+                    </div>
+                </div>
+                <div class="show-card">
+                    <div class="img" id="three">
+
+                    </div>
+                    <div class="content">
+                        <button>IN PROGRESS</button>
+                        <h2>TRANSFORM.COM</h2>
+                        <h3>WEB DEVELOPMENT</h3>
+                        <p>We aim to make the best web developer AI in the world that is very user friendly.</p>
+
+                    </div>
+                    <div class="sign-off">
+                      <div class="item"></div><label>75%</label>
+                      <div class="button-sign">
+                        <button>></button>
+                      </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+</body>
+</html>

@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en" id="htmlRoot">
+<head id="head">
+    <meta charset="UTF-8" id="metaCharset">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" id="metaViewport">
+    <title id="pageTitle">TRANSFORM</title>
+    <link rel="stylesheet" href="tran.css" id="mainStylesheet">
+    <script type="module" src="https://unpkg.com/ionicons@8.0.13/dist/ionicons/ionicons.esm.js" id="ionIconsModule"></script>
+    <script nomodule src="https://unpkg.com/ionicons@8.0.13/dist/ionicons/ionicons.js" id="ionIconsNomodule"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" id="gsapScript"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" id="scrollTriggerScript"></script>
+</head>
+<body id="body">
+    <div class="container" id="container">
+        <div class="topnav" id="topnav">
+            <div class="logo" id="logo">
+                <h2 id="logoTitle">TRANSFORM</h2>
+            </div>
+
+            <nav id="mainNav">
+                <div class="a" id="navLinks">
+                    <a href="" id="homeLink">Home</a>
+                    <a href="" id="servicesLink">Services</a>
+                    <a href="" id="aboutLink">About</a>
+                    <a href="" id="workLink">Work</a>
+                    <a href="" id="blogLink">Blog</a>
+                    <a href="" id="contactLink">Contact</a>
+                </div>
+            </nav>
+
+            <button id="setbtn">
+                <ion-icon name="settings-outline" id="settingsIcon"></ion-icon>
+            </button>
+
+            <div class="settings" id="settingsPanel">
+                <header id="settingsHeader">
+                    <h2 id="settingsTitle">Settings</h2>
+                </header>
+
+                <div class="sett" id="settingsList">
+                    <div class="field" id="appearanceField">
+                        <button id="appbtn">Appearance</button>
+                    </div>
+                    <div class="fieldtwo" id="accountField">
+                        <button id="accbtn">Account</button>
+                    </div>
+                    <div class="fieldthree" id="websiteField">Website</div>
+                    <div class="fieldfour" id="developerField">Developer</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card" id="heroCard">
+            <p id="pone">WE DON'T FOLLOW CHANGE</p>
+            <h1 id="normal">WE CREATE TRANSFORMATION</h1>
+            <p id="divider">-----------</p>
+            <p id="small">Transform is a technology company building digital solutions that drive businesss foward</p>
+
+            <div class="buttons" id="heroButtons">
+                <button id="getBtn">GET STARTED</button>
+                <button id="btTwo">EXPLORE SERVISES</button>
+            </div>
+        </div>
+
+        <div class="brads" id="brandRow">
+            <ion-icon name="logo-google" id="googleBrand"></ion-icon>
+            <ion-icon name="logo-microsoft" id="microsoftBrand"></ion-icon>
+            <ion-icon name="logo-amazon" id="amazonBrand"></ion-icon>
+        </div>
+    </div>
+    <section class="section" id="servicesSection">
+        <header id="servicesHeader">
+            <h2 id="servicesTitle">OUR SERVICES</h2>
+        </header>
+
+        <div class="card-show" id="servicesGrid">
+            <div class="small-card" id="webDevCard">
+                <div class="title" id="webDevTitle">
+                    <ion-icon name="logo-web-component" id="webDevIcon"></ion-icon>
+                    <h2 id="webDevHeading">Web-Development</h2>
+                    <p id="webDevText">Interactive, proper designed websites from our qualified</p>
+                    <button id="webDevMoreBtn">Learn more</button>
+                </div>
+            </div>
+
+            <div class="small-card" id="unixCard">
+                <div class="title" id="unixTitle">
+                    <ion-icon name="options-outline" id="unixIcon"></ion-icon>
+                    <h2 id="unixHeading">UNIX/ INX Design</h2>
+                    <p id="unixText">Interactive, proper designed websites from our qualified</p>
+                    <button id="unixBtn">Learn more</button>
+                </div>
+            </div>
+
+            <div class="small-card" id="strategyCard">
+                <div class="title" id="strategyTitle">
+                    <ion-icon name="git-branch-outline" id="strategyIcon"></ion-icon>
+                    <h2 id="strategyHeading">OPTICAL STRATEGY</h2>
+                    <p id="strategyText">Interactive, proper designed websites from our qualified</p>
+                    <button id="strategyBtn">Learn more</button>
+                </div>
+            </div>
+
+            <div class="small-card" id="brandingCard">
+                <div class="title" id="brandingTitle">
+                    <ion-icon name="bar-chart-outline" id="brandingIcon"></ion-icon>
+                    <h2 id="brandingHeading">BRANDING</h2>
+                    <p id="brandingText">Interactive, proper designed websites from our qualified</p>
+                    <button id="brandingBtn">Learn more</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="about" id="aboutSection">
+        <div class="values-card" id="valuesCard">
+            <div class="h2" id="valuesHeader">
+                <p id="whyUsLabel">Why us</p>
+                <h2 id="valuesTitle">OUR VALUES</h2>
+            </div>
+
+            <div class="rows" id="integrityRow">
+                <ion-icon name="bulb-outline" id="integrityIcon"></ion-icon>
+                <h3 id="integrityTitle">Integrity</h3>
+            </div>
+
+            <div class="rows" id="teamworkRow">
+                <ion-icon name="people-outline" id="teamworkIcon"></ion-icon>
+                <h3 id="teamworkTitle">TEAM WORK</h3>
+            </div>
+
+            <div class="rows" id="transparentRow">
+                <ion-icon name="shield-checkmark-outline" id="transparentIcon"></ion-icon>
+                <h3 id="transparentTitle">Transparent</h3>
+            </div>
+
+            <div class="rows" id="timelessRow">
+                <ion-icon name="stopwatch-outline" id="timelessIcon"></ion-icon>
+                <h3 id="timelessTitle">Timeless</h3>
+            </div>
+        </div>
+
+        <div class="rating" id="statsPanel">
+            <h2 id="statsHeading">STATS</h2>
+            <p id="statsText">According to the numbers</p>
+
+            <div class="stcards" id="statsCards">
+                <div class="stat-cards" id="statCustomers">
+                    <h2 id="customersValue">+5M</h2>
+                    <p id="customersLabel">Active customers</p>
+                </div>
+
+                <div class="stat-cards" id="statAttendence">
+                    <h2 id="attendanceValue">+150M</h2>
+                    <p id="attendanceLabel">Attendet to customers</p>
+                </div>
+
+                <div class="stat-cards" id="statExperience">
+                    <h2 id="experienceValue">+15Yrs</h2>
+                    <p id="experienceLabel">Years of Experience</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="projects" id="projectsSection">
+        <div class="projh2" id="projectHeader">
+            <h1 id="projectsHeading">PROJECTS IN PROGRESS</h1>
+            <p id="projectsText">We as Transform are woring on several projects as we continue to build our legasy as the top company we are currenntly oin 2026. Working o creating unimaginable sites and so much more.</p>
+        </div>
+
+        <div class="mention" id="projectMention">
+            <div class="nav" id="projectNav">
+                <button id="webDevTab">WEB DEV</button>
+                <button id="osManufactureTab">OS MANUFACTURE</button>
+                <button id="teachingTab">TAECHING</button>
+                <button id="otherTab">OTHER</button>
+            </div>
+
+            <div class="prj-card" id="projectCardList">
+                <div class="show-card" id="projectCardOne">
+                    <div class="img" id="projectImageOne"></div>
+
+                    <div class="content" id="projectContentOne">
+                        <button id="projectStatusOne">IN PROGRESS</button>
+                        <h2 id="projectTitleOne">TRANSFORM.COM</h2>
+                        <h3 id="projectCategoryOne">WEB DEVELOPMENT</h3>
+                        <p id="projectDescOne">We aim to make the best web developer AI in the world that is very user friendly.</p>
+                    </div>
+
+                    <div class="sign-off" id="projectSignoffOne">
+                        <div class="item" id="projectProgressBarOne"></div>
+                        <label id="projectProgressLabelOne">75%</label>
+                        <div class="button-sign" id="projectButtonWrapOne">
+                            <button id="butthree">></button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="show-card" id="projectCardTwo">
+                    <div class="img" id="two"></div>
+
+                    <div class="content" id="projectContentTwo">
+                        <button id="projectStatusTwo">IN PROGRESS</button>
+                        <h2 id="projectTitleTwo">TRANSFORM EDU</h2>
+                        <h3 id="projectCategoryTwo">TRANSFORM EDUCATION</h3>
+                        <p id="projectDescTwo">We aim to make the best web developers in the world through transform edu program.</p>
+                    </div>
+
+                    <div class="sign-off" id="projectSignoffTwo">
+                        <div class="item" id="projectProgressBarTwo"></div>
+                        <label id="projectProgressLabelTwo">64%</label>
+                        <div class="button-sign" id="projectButtonWrapTwo">
+                            <button id="buttwo">></button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="show-card" id="projectCardThree">
+                    <div class="img" id="three"></div>
+
+                    <div class="content" id="projectContentThree">
+                        <button id="projectStatusThree">IN PROGRESS</button>
+                        <h2 id="projectTitleThree">TRANSFORM SYSTEM UNITS</h2>
+                        <h3 id="projectCategoryThree">SYSTEM ENHANCE</h3>
+                        <p id="projectDescThree">We aim to make the most efficient, fast and productive SU in the world.</p>
+                    </div>
+
+                    <div class="sign-off" id="projectSignoffThree">
+                        <div class="item" id="projectProgressBarThree"></div>
+                        <label id="projectProgressLabelThree">50%</label>
+                        <div class="button-sign" id="projectButtonWrapThree">
+                            <button id="buttone">></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="appearance" id="appearancePanel">
+        <div class="button-back" id="appearanceCloseWrap">
+            <button id="back">X</button>
+        </div>
+
+        <header id="appearanceHeader">
+            <h2 id="appearanceTitle">APPEARANCE</h2>
+            <p id="appearanceText">Matters in every website, change it</p>
+        </header>
+
+        <div class="app-cards" id="appearanceCards">
+            <div class="cards-theme" id="themeCard">
+                <header id="themeHeader">
+                    <h3 id="themeTitle">Theme</h3>
+                </header>
+
+                <div class="theme-change" id="themeChange">
+                    <button id="blackbtn">
+                        <img src="black.png" alt="" id="blackImg">
+                    </button>
+
+                    <div class="change-color-pannel" id="themePalette">
+                        <button id="blue">
+                            <img src="blue.png" alt="" id="blueImg">
+                        </button>
+                        <button id="redbtn">
+                            <img src="red.png" alt="" id="redImg">
+                        </button>
+                        <button id="greenbtn">
+                            <img src="green.png" alt="" id="greenImg">
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cards-theme-one" id="fontCard">
+                <label for="fontSelect" id="fontLabel">Animations</label>
+                <div class="animations" >
+
+                </div>
+            </div>
+            <div class="cards-theme-two" id="layoutCard"></div>
+        </div>
+    </div>
+
+    <section class="page" id="pageSection"></section>
+    <div class="accounts">
+      <div class="header">
+        <h1>My account</h1>
+        <p>Manage your account and preferences</p>
+        <div class="back-btn">
+            <button id="accback">Back</button>
+        </div>
+      </div>
+      <div class="active-part"> 
+         <div class="img"></div>
+         <div class="names">
+ <h2 id="usernamesign"></h2>
+        <p id="cheki"></p>
+        <p id="emailusername"></p>
+         </div>
+        <div class="acc-active">
+            <div class="dot"> <h3>Active</h3>
+            <div class="active-color"></div></div>
+
+        </div>
+        </div>
+         <div class="active-security">
+            <div class="personal-info">
+                <div class="head">
+                    <h2>Personal info</h2>
+                    <button id="editprof">Edit profile</button>
+                </div>
+                <div class="editprofsection">
+                    <input type="text" placeholder="First name" id="changedusername">
+                    <input type="text" placeholder="last name" id="changedlastname">
+                    <input type="text" placeholder="Email" id="changedemail">
+                    <input type="text" placeholder="Location" id="changedlocation">
+                    <button id="finish">Done</button>
+                </div>
+                <div class="personal-info-info">
+                    <div class="names">
+                        <div class="first">
+                            <h2>First Name</h2>
+                            <p id="usernameone"></p>
+                            
+                        </div>
+                        <div class="last">
+                            <h2>Last Name</h2>
+                            <p id="usernameLast">User</p>
+                        </div>
+                    </div>
+                    <div class="emaillocation">
+                        <div class="email">
+                            <h2>Email</h2>
+                            <p id="emailcopied">
+                            </p>
+                        </div>
+                        <div class="location">
+                            <h2>location</h2>
+                            <p id="location"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="security">
+                <div class="header">
+                      <h2>Security</h2>
+                    <button id="changepass">Change pass</button>
+                </div>
+               <div class="password-section">
+                 <h2>Password</h2>
+                <p>************</p>
+                <button id="showpass">Show</button>
+               </div>
+               
+            </div>
+           
+         </div>
+        <div class="showpasssection">
+            <input type="password" placeholder="Enter your password">
+            <input type="password" placeholder="New password">
+            <input type="password" placeholder="Re-enter password">
+
+            <button id="donepass">Done</button>
+
+            </div>
+    </div>
+    <script src="script.js" id="mainScript"></script>
+</body>
+</html>
